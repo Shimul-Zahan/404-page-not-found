@@ -89,9 +89,10 @@ span{
 /* small device */
 @media screen and (max-width : 576px) {
     .container{
-        width: 100%;
+        width: 375px;
         height: 100%;
-        padding: 23px;
+        height: 100%;
+        padding: 10px 0;
     }
     .container-flexbox{
         flex-direction: column;
