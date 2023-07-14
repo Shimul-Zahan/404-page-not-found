@@ -14,6 +14,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 40px 119px 24px 77px;
+    margin: 0 auto;
 }
 
 .logo{
