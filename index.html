@@ -7,21 +7,136 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&family=Work+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
     <title>404 Page not found</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Space Mono', monospace;
+            font-family: 'Work Sans', sans-serif;
+        }
+        .container{
+            padding: 40px 119px 24px 77px;
+        }
+        .logo h1{
+            font-family: 'Space Mono', monospace;
+            color: #333;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -1.92px;
+            margin-bottom: 200px;
+        }
+        main{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .main-desc h1{
+            max-width: 586px;
+            color: var(--gray-1, #333);
+            font-family: 'Space Mono';
+            font-size: 64px;
+            font-weight: 700;
+            letter-spacing: -2.24px;
+        }
+        .main-desc p{
+            max-width: 381px;
+            color: var(--gray-2, #4F4F4F);
+            font-family: 'Space Mono';
+            font-size: 24px;
+            font-weight: 400;
+            letter-spacing: -0.84px;
+            margin: 36px 0 64px;
+        }
+        button{
+            width: 216px;
+            height: 68px;
+            background: var(--gray-1, #333);
+            color: #FFF;
+            font-family: 'Space Mono';
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: -0.49px;
+            margin-bottom: 308px;
+        }
+        footer{
+            text-align: center;
+            color: #BDBDBD;
+            font-family: 'Montserrat';
+            font-size: 14px;
+            font-weight: 500;
+        }
+        span{
+            color: #BDBDBD;
+            font-family: 'Montserrat';
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration-line: underline;
+        }
+
+        /* small device */
+        @media screen and (max-width: 576px) {
+            .container{
+                width: 100%; 
+                padding: 24px;
+            }
+            .logo h1{
+                margin-bottom: 64px;
+            }
+            main{
+                flex-direction: column;
+                width: 100%;
+            }
+            .image{
+                width: 100%;
+                margin-bottom: 60px;
+                display: flex;
+                justify-content: center;
+            }
+            .image img{
+                width: 286.83px;
+                height: 220.352px; 
+            }
+            .main-desc h1{
+                max-width: 380px;
+                font-size: 48px; 
+            }
+            .main-desc p{
+                max-width: 325px;
+                font-size: 18px; 
+                margin: 30px 0 66px;
+            }
+            button{
+                margin-bottom: 114px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="logo">404 not found</div>
-        <div class="container-flexbox">
-            <img src="./assets/Scarecrow.png" alt="" class="main-image">
-            <div class="flex-box-description">
+        <header class="logo">
+            <h1>404 NOT FOUND</h1>
+        </header>
+        <main>
+            <div class="image">
+                <img src="./assets/Scarecrow.png" alt="" height="414px" width="540px">
+            </div>
+            <div class="main-desc">
                 <h1>I have bad news for you</h1>
                 <p>The page you are looking for might be removed or is temporarily unavailable</p>
-                <button>Back to homepage</button>
+                <button>BACK TO HOMEPAGE</button>
             </div>
-        </div>
-        <footer>created by <span>AlgoWebBot</span> - devChallenges.io</footer>
+        </main>
+        <footer>
+            <p>created by <span>AlgoWebBot</span> - devChallenges.io</p>
+        </footer>
     </div>
 </body>
 </html>
